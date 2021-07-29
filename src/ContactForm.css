@@ -148,10 +148,10 @@ form .field textarea {
   
   form .field label {
     display: block;
-    font-size: 1.0rem;
-    padding: .5rem .75rem 0;
+    font-size: .9rem;
+    padding: .75rem .75rem 0;
     text-transform: uppercase;
-    color: rgb(50, 50, 50);
+    color: rgb(38, 38, 38);
     font-weight: 700;
     letter-spacing: 1px;
   }

@@ -8,6 +8,14 @@ const credits = [
     link:'https://open.spotify.com/track/68xkV0MCg8M8dwH4d4Zl31?si=a684eac057c441a2'
   },
   {
+    artist: 'The Red Pears', 
+    title: 'Twisted Colours',
+    type: 'song', 
+    credited: 'Producer / Mixer', 
+    art: 'https://drive.google.com/uc?export=view&id=1C21kMrAISK0AHcXf3C_X_ZCzA6YMLb8x', 
+    link:'https://open.spotify.com/track/74elvKsYrI2xvZRy5AC9bx?si=58f07c52bcfc4475'
+  },
+  {
     artist: 'AO Gerber', 
     title: 'Stangers',
     type: 'song', 
