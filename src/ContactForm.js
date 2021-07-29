@@ -83,7 +83,7 @@ class ContactForm extends Component {
     const clearButton = this.props.formSubmitted ? <button className={this.state.clearAnimation} onClick={this.handleClearForm}>Clear</button> : null;
     return(
       <div>
-        <form>
+        <form name="Contact" action="POST" data-netlify="true">
           <div className="field half">
             <label htmlFor="name">Name</label>
             <input type="text" id="name" name="name" value={this.state.name} onChange={this.handleChange}/>
@@ -103,6 +103,7 @@ class ContactForm extends Component {
           <div className="field tnb message">
             <label htmlFor="message">Message about your project</label>
             <textarea type="text" id="message" name="message" value={this.state.message} onChange={this.handleChange}/>
+            <div className="contact-email">or email kenny@destroyboxaudio.com</div>
           </div>
           <button className="formButton" onClick={this.handleSubmit}>Submit</button>
           {clearButton}

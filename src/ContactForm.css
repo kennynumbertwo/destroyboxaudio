@@ -49,13 +49,22 @@ form .field textarea {
 }
 
 form .field textarea {
-  min-height: 250px;
-  max-height: 250px;
+  min-height: 225px;
+  max-height: 225px;
   resize: vertical;
 }
 
 .field.tnb.message {
   height: 300px;
+}
+
+.contact-email {
+  font-family: 'Roboto', sans-serif !important; 
+  text-align: center;
+  color: #878686;
+  text-transform: uppercase;
+  font-size: .9em;
+  letter-spacing: .5px;
 }
 
 .formButton {
@@ -187,5 +196,15 @@ form .field textarea {
     display: block;
     margin: auto;
     width: 100%;
+  }
+
+  .contact-email {
+    font-size: .8em;
+  }
+
+  form .field textarea {
+    min-height: 140px;
+    max-height: 140px;
+    resize: vertical;
   }
 }
