@@ -1,0 +1,191 @@
+form {
+  box-sizing: border-box;
+  margin: 2rem 0;
+  display: table;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, .1); 
+}
+
+form .field {
+  display: block;
+  border: 1px solid #BDBDBD;
+  float: left;
+  width: 100%;
+}
+
+form .field.tnb {
+  border-top: 0;
+}
+
+form .field.half {
+  width: 50%;
+}
+
+form .field.last {
+  border-left: 0;
+}
+
+form .field label {
+  display: block;
+  font-size: 1.0rem;
+  padding: 1.5rem 2rem 0;
+  text-transform: uppercase;
+  color: rgb(87, 87, 87);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+form .field input,
+form .field textarea {
+  font-family: 'Roboto', sans-serif !important; 
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem 1.0rem;
+  font-size: 1.1rem;
+  border: 0;
+  color: #878686;
+  font-weight: 400;
+  letter-spacing: .5px;
+  outline: 0;
+}
+
+form .field textarea {
+  min-height: 250px;
+  max-height: 250px;
+  resize: vertical;
+}
+
+.field.tnb.message {
+  height: 300px;
+}
+
+.formButton {
+  color: #494949;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  background: #ffffff;
+  color: #7e7e7e;
+  padding: 20px;
+  border: 1px solid #BDBDBD;
+  border-top: 0;
+  display: block;
+  margin: auto;
+  transition: all 0.4s ease 0s;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.formButtonOut {
+  color: #494949;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  background: #ffffff;
+  color: #7e7e7e;
+  padding: 20px;
+  border: 1px solid #BDBDBD;
+  border-top: 0;
+  display: block;
+  margin: auto;
+  transition: all 1s ease 0s;
+  width: 100%;
+  animation-name: button-fade-out;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+  animation-duration: 1s;
+  position: relative;
+  z-index: 1;
+}
+
+
+@keyframes button-fade-out {
+  0% {
+    opacity: 1;
+	}
+	100% {
+    opacity: 0;
+	}
+}
+
+.formButton:hover {
+  color: #ffffff;
+  background: black;
+  border-color: black;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+}
+
+@media all and (max-width:525px) {
+
+  form {
+    box-sizing: border-box;
+    margin: 2rem 0;
+    display: table;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, .1); 
+  }
+  
+  form .field {
+    display: block;
+    border: 1px solid #BDBDBD;
+    float: left;
+    width: 100%;
+  }
+  
+  form .field.tnb {
+    border-top: 0;
+  }
+  
+  form .field.half {
+    width: 50%;
+  }
+  
+  form .field.last {
+    border-left: 0;
+  }
+  
+  form .field label {
+    display: block;
+    font-size: 1.0rem;
+    padding: .5rem .75rem 0;
+    text-transform: uppercase;
+    color: rgb(50, 50, 50);
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  form .field input,
+  form .field textarea {
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem .5rem;
+    font-size: 1.1rem;
+  }
+  
+  form .field textarea {
+    min-height: 150px;
+    resize: vertical;
+  }
+  
+  .field.tnb.message {
+    height: 200px;
+  }
+  
+  .formButton {
+    color: #494949;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background: #ffffff;
+    color: #7e7e7e;
+    padding: 20px;
+    border: 1px solid #BDBDBD;
+    border-top: 0;
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+}

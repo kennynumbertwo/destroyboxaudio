@@ -1,0 +1,111 @@
+.SubmitWarningModal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+  opacity: 1;
+	animation-name: modalFadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: .25s;
+}
+
+@keyframes modalFadeIn {
+  0% {
+    opacity: 0;
+	}
+	100% {
+    opacity: 1;
+	}
+}
+
+.SubmitWarningModal.fade-out {
+  animation-name: modalFadeOut;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-duration: .25s;
+}
+
+@keyframes modalFadeOut {
+  0% {
+    opacity: 1;
+	}
+	100% {
+    opacity: 0;
+	}
+}
+
+.SubmitWarningModalContainer {
+  margin: 15rem auto;
+  width: 250px;
+  height: 125px;
+  border-radius: 5px;
+  background-color: #fff;	
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, .1); 
+  animation-name: slide-in;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: .25s;
+}
+
+@keyframes slide-in {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(0%);;
+	}
+}
+
+.SubmitWarningModalContainer.fade-out {
+  animation-name: slide-out;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: .25s;
+}
+
+@keyframes slide-out {
+	0% {
+		transform: translateY(0%);
+	}
+	100% {
+		transform: translateY(100%);;
+	}
+}
+
+.SubmitWarningModalMessage {
+  padding-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #878686;
+  padding-bottom: 15px;
+  text-align: center;
+  margin: auto
+}
+
+.closeWarning {
+  color: #494949;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  background: #ffffff;
+  padding: 5px;
+  width: 80px;
+  border: 1.5px solid #878686;
+  display: block;
+  transition: all 0.4s ease 0s;
+  border-radius: 2px;
+  margin: auto
+}
+
+.closeWarning:hover {
+  color: #ffffff;
+  background: black;
+  border-color: black;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+}

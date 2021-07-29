@@ -1,0 +1,172 @@
+.album-container {
+  height: 400px;
+  width: 400px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.album-image {
+  background-repeat: no-repeat;
+  background-size: 400px 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  width: 400px;
+  height: 400px;
+  background-color: rgba(0,0,0,.6);
+  display: flex;
+  flex-basis: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0; 
+  transition: opacity 0.25s;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.overlay--blur {
+  backdrop-filter: blur(5px);
+}
+
+.overlay > * {
+  transform: translateY(40px);
+  transition: transform 0.25s;
+}
+
+.title {
+  color: white;
+  font-size: 26px;
+}
+
+.titleSmall {
+  color: white;
+  font-size: 24px;
+}
+
+.artist {
+  color: white;
+  font-size: 20px;
+  margin-top: -0.25em;
+}
+
+.credits {
+  color: white;
+  font-size: 18px;
+  margin-top: -0.25em;
+  padding-bottom: 3em;
+}
+
+.musicLink {
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9em;
+  background: rgba(0,0,0,.4);
+  padding: 10px;
+  border: 1px solid #303030;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+  border-radius: 2px;
+}
+
+.musicLink:hover {
+  color: #ffffff;
+  background: black;
+  border-color: black;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+}
+
+@media (min-width: 550px) {
+  
+  .overlay:hover {
+    opacity: 1;
+  }
+  
+  .overlay:hover > * {
+    transform: translateY(0);
+  }
+  
+}
+
+@media all and (max-width:525px) {
+
+  .album-container {
+    width: 400px;
+    height: 400px;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .album-image {
+    background-size: 400px 400px;
+  }
+
+  .overlay {
+    width: 400px;
+    height: 400px;
+  }
+
+  .title {
+    padding-right: 25px;
+    padding-left: 25px;
+    text-align: center;
+  }
+
+  .design {
+    order: 5
+  }
+
+  .overlay.clicked {
+    opacity: 1;
+  }
+  
+  .overlay.clicked > * {
+    transform: translateY(0);
+  }
+}
+
+@media all and (max-width:415px) {
+
+
+  .album-container {
+    width: 325px;
+    height: 325px;
+  }
+
+  .album-image {
+    background-size: 325px 325px;
+  }
+
+  .overlay {
+    width: 325px;
+    height: 325px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .titleSmall {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .artist {
+    font-size: 16px;
+    margin-top: -0.75em;
+  }
+  
+  .credits {
+    font-size: 14px;
+    padding-bottom: 3em;
+    margin-top: -0.25em;
+  }
+}
