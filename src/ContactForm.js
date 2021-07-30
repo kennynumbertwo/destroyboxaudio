@@ -105,7 +105,7 @@ class ContactForm extends Component {
             <textarea type="text" id="message" name="message" value={this.state.message} onChange={this.handleChange}/>
             <div className="contact-email">or email kenny@destroyboxaudio.com</div>
           </div>
-          <button className="formButton" onClick={this.handleSubmit}>Submit</button>
+          <button className="formButton" type="submit" onClick={this.handleSubmit}>Submit</button>
           {clearButton}
         </form>
       </div>    
