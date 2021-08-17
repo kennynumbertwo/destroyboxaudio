@@ -19,13 +19,13 @@
 .overlay {
   width: 400px;
   height: 400px;
-  background-color: rgba(0,0,0,.6);
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   flex-basis: auto;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  opacity: 0; 
+  opacity: 0;
   transition: opacity 0.25s;
   font-family: 'Open Sans', sans-serif;
 }
@@ -67,8 +67,8 @@
   text-transform: uppercase;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
-  font-size: .9em;
-  background: rgba(0,0,0,.4);
+  font-size: 0.9em;
+  background: rgba(0, 0, 0, 0.4);
   padding: 10px;
   border: 1px solid #303030;
   display: inline-block;
@@ -85,19 +85,16 @@
 }
 
 @media (min-width: 550px) {
-  
   .overlay:hover {
     opacity: 1;
   }
-  
+
   .overlay:hover > * {
     transform: translateY(0);
   }
-  
 }
 
-@media all and (max-width:525px) {
-
+@media all and (max-width: 525px) {
   .album-container {
     width: 400px;
     height: 400px;
@@ -121,21 +118,19 @@
   }
 
   .design {
-    order: 5
+    order: 5;
   }
 
   .overlay.clicked {
     opacity: 1;
   }
-  
+
   .overlay.clicked > * {
     transform: translateY(0);
   }
 }
 
-@media all and (max-width:415px) {
-
-
+@media all and (max-width: 415px) {
   .album-container {
     width: 325px;
     height: 325px;
@@ -148,6 +143,7 @@
   .overlay {
     width: 325px;
     height: 325px;
+    transition: opacity 0.4s;
   }
 
   .title {
@@ -158,15 +154,19 @@
     color: white;
     font-size: 20px;
   }
-  
+
   .artist {
     font-size: 16px;
     margin-top: -0.75em;
   }
-  
+
   .credits {
     font-size: 14px;
     padding-bottom: 3em;
     margin-top: -0.25em;
+  }
+
+  .overlay > * {
+    transition: transform 0.4s;
   }
 }

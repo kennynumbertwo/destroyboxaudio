@@ -58,6 +58,7 @@ class RecordingCredits extends Component {
     const artwork = this.props.credits.map(credit => (
       <Art
         key={credit.title}
+        id={credit.title}
         artist={credit.artist}
         title={credit.title}
         type={credit.type}

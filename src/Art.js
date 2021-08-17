@@ -9,6 +9,27 @@ class Art extends Component {
     }
     this.handleButtonClick = this.handleButtonClick.bind(this);
     this.handleArtClick = this.handleArtClick.bind(this);
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+  
+  componentWillUnmount() {
+     window.removeEventListener('scroll', this.handleScroll);
+   }
+
+  handleScroll() {
+    const divToCheck = document.getElementById(this.props.title);
+    const {top} = divToCheck.getBoundingClientRect();
+    let inFrame;
+    if (top < -150 || top > 400 & this.state.clicked === true) {
+      this.setState({clicked: false});
+    } else if (top < 300 & this.state.clicked === false) {
+      this.setState({clicked: true});
+    }
+    return inFrame;
   }
 
   handleButtonClick() {
@@ -26,7 +47,7 @@ class Art extends Component {
     return(
       <div className="album-container animated animatedFadeInUp fadeInUp">
         <div className="album-image" style={albumArt}>         
-          <div className={overlay} onClick={this.handleArtClick}>
+          <div className={overlay} id ={this.props.id} onClick={this.handleArtClick}>
             <p className={title}>{this.props.type === "album" ? <i>{this.props.title}</i> : `"${this.props.title}"`}</p>
             <p className="artist">{this.props.artist}</p>
             <p className="credits">{this.props.credited}</p>
