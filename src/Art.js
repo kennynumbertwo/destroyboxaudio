@@ -24,9 +24,9 @@ class Art extends Component {
     const divToCheck = document.getElementById(this.props.title);
     const {top} = divToCheck.getBoundingClientRect();
     let inFrame;
-    if (top < -150 || top > 400 & this.state.clicked === true) {
+    if (top < -125 || top > 250 & this.state.clicked === true) {
       this.setState({clicked: false});
-    } else if (top < 300 & this.state.clicked === false) {
+    } else if (top < 250 & this.state.clicked === false) {
       this.setState({clicked: true});
     }
     return inFrame;
