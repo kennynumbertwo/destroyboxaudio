@@ -1,6 +1,22 @@
 const credits = [
   {
     artist: 'The Red Pears', 
+    title: 'You Thought We Left...',
+    type: 'album', 
+    credited: 'Producer / Mixer', 
+    art: 'https://drive.google.com/uc?export=view&id=1jR4hwah-XJr_UTNqQD5mlNYTOxxHZw8-', 
+    link:'https://open.spotify.com/album/3njVnwW9KBX7kIZDJdA1dS?si=bdk68dH8RraJ4jRaa0uXpg'
+  },
+  {
+    artist: 'The Red Pears', 
+    title: 'House of Mirrors',
+    type: 'song', 
+    credited: 'Producer / Mixer', 
+    art: 'https://drive.google.com/uc?export=view&id=1WgB6WdISqJn1dpdnxO4GM7s62jO7kR0z', 
+    link:'https://open.spotify.com/album/39upnCEJaU8sbLYHLP8psE?si=O32nw-sPQK6ZGXjbUkCeJg'
+  },
+  {
+    artist: 'The Red Pears', 
     title: 'Not In The Cards',
     type: 'song', 
     credited: 'Producer / Mixer', 
